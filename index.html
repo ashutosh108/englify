@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<table>
+<td>
+Replacement pairs:<br>
+<textarea id="pairs" cols=30 rows=30 style="white-space:pre;overflow:auto">
+Индія &lt;=&gt; India
+Удупи &lt;=&gt; Udupi
+Гокарна &lt;=&gt; Gokarna
+Нью-Дели &lt;=&gt; New Delhi
+Манали &lt;=&gt; Manali
+Колката &lt;=&gt; Kolkata
+Такжикистан &lt;=&gt; Takzhikistan
+Душанбе &lt;=&gt; Dushanbe
+Казахстан &lt;=&gt; Kazakhstan
+Актау &lt;=&gt; Aktau
+Россія &lt;=&gt; Russia
+Пермь &lt;=&gt; Perm
+Уфа &lt;=&gt; Ufa
+Екатеринбург &lt;=&gt; Ekaterinburg
+Сургут &lt;=&gt; Surgut
+Челябинск &lt;=&gt; Chelyabinsk
+Киргизія &lt;=&gt; Kyrgyzstan
+Бишкек &lt;=&gt; Bishkek
+Алма-Ата &lt;=&gt; Almaty
+Текели &lt;=&gt; Tekeli
+Усть-Каменогорск &lt;=&gt; Ust-Kamenogorsk
+Омск &lt;=&gt; Omsk
+Новосибирск &lt;=&gt; Novosibirsk
+Барнаул &lt;=&gt; Barnaul
+Томск &lt;=&gt; Tomsk
+Ко Пха Нган &lt;=&gt; Koh Pha Ngan
+Ко Самуи &lt;=&gt; Koh Samui
+Таиланд &lt;=&gt; Thailand
+Индонезія &lt;=&gt; Indonesia
+Денпасар &lt;=&gt; Denpasar
+Мирный &lt;=&gt; Mirny
+Хабаровск &lt;=&gt; Khabarovsk
+Владивосток &lt;=&gt; Vladivostok
+Петропавловск-Камчатскій &lt;=&gt; Petropavlovsk-Kamchatskіy
+Арменія &lt;=&gt; Armenia
+Ереван &lt;=&gt; Yerevan
+Грузія &lt;=&gt; Georgia
+Тбилиси &lt;=&gt; Tbilisi
+Самара &lt;=&gt; Samara
+Волгоград &lt;=&gt; Volgograd
+Ульяновск &lt;=&gt; Ulyanovsk
+Пятигорск &lt;=&gt; Pyatigorsk
+Ставрополь &lt;=&gt; Stavropol
+Семикаракорск &lt;=&gt; Semikarakorsk
+Краснодар &lt;=&gt; Krasnodar
+Симферополь &lt;=&gt; Simferopol
+ДНР &lt;=&gt; DPR
+Донецк &lt;=&gt; Donetsk
+Старый Оскол &lt;=&gt; Stary Oskol
+Воронеж &lt;=&gt; Voronezh
+Тамбов &lt;=&gt; Tambov
+Казань &lt;=&gt; Kazan
+Киров &lt;=&gt; Kirov
+Рязань &lt;=&gt; Ryazan
+Москва &lt;=&gt; Moscow
+Санкт-Петербург &lt;=&gt; St. Petersburg
+Мурманск &lt;=&gt; Murmansk
+Костомукша &lt;=&gt; Kostomuksha
+Смоленск &lt;=&gt; Smolensk
+Бѣлоруссія &lt;=&gt; Belarus
+Гомель &lt;=&gt; Gomel
+Минск &lt;=&gt; Minsk
+Украина &lt;=&gt; Ukraine
+Харьков &lt;=&gt; Kharkiv
+Кременчуг &lt;=&gt; Kremenchug
+Кривой Рог &lt;=&gt; Krivoy Rog
+Киев &lt;=&gt; Kiev
+Николаев &lt;=&gt; Nikolaev
+Одесса &lt;=&gt; Odessa
+Коломыя &lt;=&gt; Kolomyia
+Молдова &lt;=&gt; Moldova
+Кишинев &lt;=&gt; Chișinău
+Латвія &lt;=&gt; Latvia
+Рига &lt;=&gt; Riga
+Юрмала &lt;=&gt; Jurmala
+Эстонія &lt;=&gt; Estonia
+Таллин &lt;=&gt; Tallinn
+Литва &lt;=&gt; Lithuania
+Вильнюс &lt;=&gt; Vilnius
+Польша &lt;=&gt; Poland
+Варшава &lt;=&gt; Warsaw
+Австрія &lt;=&gt; Austria
+Вѣна &lt;=&gt; Vienna
+Франція &lt;=&gt; France
+Марсель &lt;=&gt; Marseilles
+Испанія &lt;=&gt; Spain
+Барселона &lt;=&gt; Barcelona
+В.Британія &lt;=&gt; UK
+Лондон &lt;=&gt; London
+Канада &lt;=&gt; Canada
+Фредериктон &lt;=&gt; Fredericton
+Торонто &lt;=&gt; Toronto
+Мексика &lt;=&gt; Mexico
+Канкун &lt;=&gt; Cancún
+экāдащӣ &lt;=&gt; Ekādaśī
+Āмалакӣ &lt;=&gt; Āmalakī
+(\d+((–|-)\d+)?)\s+марта &lt;=&gt; March $1
+</textarea>
+</td>
+<td>
+<textarea id="text" cols=100 rows=30>
+---
+title: &quot;Āмалакӣ экāдащӣ, Холикā пәурн̣амāсӣ&quot;
+date: 2020-03-03
+description: &quot;Āмалакӣ экāдащӣ, Холикā пәурн̣амāсӣ 5&ndash;9 марта 2020&quot;
+---
+
+&lt;style type=&quot;text/css&quot;&gt;
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#9ABAD9;margin:0px auto;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#9ABAD9;color:#444;background-color:#EBF5FF;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#9ABAD9;color:#fff;background-color:#409cff;}
+.tg .tg-kjfg{background-color:#d2e4fc;font-family:Georgia, serif !important;;border-color:#cbcefb;text-align:left;vertical-align:top}
+.tg .tg-oe15{background-color:#ffffff;border-color:#ffffff;text-align:left;vertical-align:top}
+.tg .tg-nheu{font-size:18px;font-family:Georgia, serif !important;;background-color:#26ade4;color:#ffcc67;border-color:#cbcefb;text-align:center;vertical-align:top}
+.tg .tg-kaak{background-color:#ffffff;border-color:#ffffff;text-align:left;vertical-align:top}
+.tg .tg-me4s{background-color:#f7fdfa;font-family:Georgia, serif !important;;border-color:#cbcefb;text-align:left;vertical-align:top}
+.tg .tg-lddw{background-color:#D2E4FC;font-family:Georgia, serif !important;;border-color:#cbcefb;text-align:left;vertical-align:middle}
+.tg .tg-mz0k{background-color:#d2e4fc;font-family:Georgia, serif !important;;border-color:#cbcefb;text-align:left;vertical-align:middle}
+.tg .tg-lign{background-color:#f8a102;font-weight:bold;font-family:Georgia, serif !important;;border-color:#cbcefb;text-align:center;vertical-align:middle}
+.tg .tg-be2r{background-color:#26ade4;font-size:20px;font-family:&quot;Arial Black&quot;, Gadget, sans-serif !important;;color:#ffc702;border-color:#cbcefb;text-align:center;vertical-align:top}
+.tg .tg-qjk1{background-color:#D2E4FC;font-weight:bold;font-family:Georgia, serif !important;;border-color:#cbcefb;text-align:center;vertical-align:middle}
+.tg .tg-gi98{background-color:#26ade4;font-size:18px;font-family:&quot;Arial Black&quot;, Gadget, sans-serif !important;;color:#ffc702;border-color:#cbcefb;text-align:center;vertical-align:top}
+.tg .tg-hdoh{font-weight:bold;font-family:Georgia, serif !important;;border-color:#cbcefb;text-align:center;vertical-align:middle}
+.tg .tg-v2ry{background-color:#D2E4FC;font-family:Georgia, serif !important;;border-color:#cbcefb;text-align:center;vertical-align:top}
+.tg .tg-dc51{font-weight:bold;font-family:Georgia, serif !important;;background-color:#c0c0c0;color:#3531ff;border-color:#cbcefb;text-align:center;vertical-align:middle}
+.tg .tg-aa5g{background-color:#D2E4FC;font-family:Georgia, serif !important;;border-color:#cbcefb;text-align:left;vertical-align:top}
+.tg .tg-ugyf{background-color:#6200c9;font-weight:bold;font-family:Georgia, serif !important;;color:#ffce93;border-color:#cbcefb;text-align:center;vertical-align:middle}
+.tg .tg-cpgk{font-family:Georgia, serif !important;;border-color:#cbcefb;text-align:left;vertical-align:top}
+.tg .tg-8sel{font-family:Georgia, serif !important;;background-color:#f7fdfa;border-color:#cbcefb;text-align:left;vertical-align:top}
+.tg .tg-dzc3{font-family:Georgia, serif !important;;background-color:#d2e4fc;border-color:#cbcefb;text-align:left;vertical-align:middle}
+.tg .tg-ket8{font-family:Georgia, serif !important;;border-color:#cbcefb;text-align:left;vertical-align:middle}
+.tg .tg-82cu{font-family:Georgia, serif !important;;border-color:#cbcefb;text-align:center;vertical-align:middle}
+.tg .tg-cb1q{background-color:#D2E4FC;font-family:Georgia, serif !important;;border-color:#cbcefb;text-align:center;vertical-align:middle}
+.tg .tg-vpy5{font-family:Georgia, serif !important;;background-color:#d2e4fc;border-color:#cbcefb;text-align:left;vertical-align:top}
+.tg .tg-i9cg{background-color:#c0c0c0;font-weight:bold;font-family:Georgia, serif !important;;color:#3531ff;border-color:#cbcefb;text-align:center;vertical-align:middle}
+.tg .tg-wtwu{font-weight:bold;font-family:Georgia, serif !important;;background-color:#f8a102;border-color:#cbcefb;text-align:center;vertical-align:middle}
+.tg .tg-ehq4{font-weight:bold;font-family:Georgia, serif !important;;background-color:#6200c9;color:#ffce93;border-color:#cbcefb;text-align:center;vertical-align:middle}
+.tg .tg-0yto{font-size:20px;font-family:&quot;Arial Black&quot;, Gadget, sans-serif !important;;background-color:#26ade4;color:#ffc702;border-color:#cbcefb;text-align:center;vertical-align:top}
+.tg .tg-bzv1{background-color:#26ade4;font-size:24px;font-family:&quot;Arial Black&quot;, Gadget, sans-serif !important;;color:#ffce93;border-color:#cbcefb;text-align:center;vertical-align:middle}
+&lt;/style&gt;
+&lt;table class=&quot;tg&quot; style=&quot;undefined;table-layout: fixed; width: 817px&quot;&gt;
+&lt;colgroup&gt;
+&lt;col style=&quot;width: 59.166667px&quot;&gt;
+&lt;col style=&quot;width: 100.166667px&quot;&gt;
+&lt;col style=&quot;width: 194.166667px&quot;&gt;
+&lt;col style=&quot;width: 100.166667px&quot;&gt;
+&lt;col style=&quot;width: 95.166667px&quot;&gt;
+&lt;col style=&quot;width: 102.166667px&quot;&gt;
+&lt;col style=&quot;width: 40.166667px&quot;&gt;
+&lt;col style=&quot;width: 126.166667px&quot;&gt;
+&lt;/colgroup&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-nheu&quot; colspan=&quot;3&quot;&gt;      &lt;br&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-dc51&quot;&gt;5 марта&lt;br&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-dc51&quot;&gt;6 марта&lt;/td&gt;
+    &lt;td class=&quot;tg-dc51&quot;&gt;7 марта&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-dc51&quot;&gt;9 марта&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-aa5g&quot; rowspan=&quot;5&quot;&gt;﻿+5:30&lt;/td&gt;
+    &lt;td class=&quot;tg-me4s&quot; rowspan=&quot;5&quot;&gt;Индія&lt;/td&gt;
+    &lt;td class=&quot;tg-aa5g&quot;&gt;Удупи&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-lign&quot; rowspan=&quot;12&quot;&gt;Āмалакӣ экāдащӣ&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-ugyf&quot; rowspan=&quot;12&quot;&gt;Холикā пәурн̣амāсӣ, Кāма-даханам&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-cpgk&quot;&gt;Гокарна&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-aa5g&quot;&gt;Нью-Дели&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-cpgk&quot;&gt;Манали&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-aa5g&quot;&gt;Колката&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-8sel&quot; rowspan=&quot;7&quot;&gt;+5&lt;/td&gt;
+    &lt;td class=&quot;tg-dzc3&quot;&gt;Такжикистан&lt;/td&gt;
+    &lt;td class=&quot;tg-ket8&quot;&gt;Душанбе&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-82cu&quot;&gt;&amp;lt;8:59&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-me4s&quot;&gt;Казахстан&lt;/td&gt;
+    &lt;td class=&quot;tg-aa5g&quot;&gt;Актау&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-cb1q&quot;&gt;&amp;lt;8:59&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-vpy5&quot; rowspan=&quot;5&quot;&gt;Россія&lt;/td&gt;
+    &lt;td class=&quot;tg-cpgk&quot;&gt;Пермь&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-82cu&quot;&gt;&amp;lt;8:59&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-aa5g&quot;&gt;Уфа&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-cb1q&quot;&gt;&amp;lt;8:59&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-ket8&quot;&gt;Екатеринбург&lt;br&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-82cu&quot;&gt;&amp;lt;8:59&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-aa5g&quot;&gt;Сургут&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-cb1q&quot;&gt;&amp;lt;8:59&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-ket8&quot;&gt;Челябинск&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-82cu&quot;&gt;&amp;lt;8:59&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-be2r&quot; colspan=&quot;3&quot;&gt;एकादशीसमुत्थेन वह्निना पातकेन्धनम् ।&lt;/td&gt;
+    &lt;td class=&quot;tg-i9cg&quot;&gt;5 марта&lt;/td&gt;
+    &lt;td class=&quot;tg-i9cg&quot;&gt;6 марта&lt;/td&gt;
+    &lt;td class=&quot;tg-i9cg&quot;&gt;7 марта&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-i9cg&quot;&gt;9 марта&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-vpy5&quot; rowspan=&quot;5&quot;&gt;+6&lt;/td&gt;
+    &lt;td class=&quot;tg-8sel&quot;&gt;Киргизія&lt;/td&gt;
+    &lt;td class=&quot;tg-cpgk&quot;&gt;Бишкек&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-wtwu&quot; rowspan=&quot;14&quot;&gt;Āмалакӣ экāдащӣ&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-ehq4&quot; rowspan=&quot;14&quot;&gt;Холикā пәурн̣амāсӣ, Кāма-даханам&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-lddw&quot; rowspan=&quot;3&quot;&gt;Казахстан&lt;/td&gt;
+    &lt;td class=&quot;tg-lddw&quot;&gt;Алма-Ата&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-ket8&quot;&gt;Текели&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-lddw&quot;&gt;Усть-Каменогорск&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-8sel&quot; rowspan=&quot;4&quot;&gt;Россія&lt;/td&gt;
+    &lt;td class=&quot;tg-cpgk&quot;&gt;Омск&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-82cu&quot;&gt;&amp;lt;9:59&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-me4s&quot; rowspan=&quot;4&quot;&gt;+7&lt;/td&gt;
+    &lt;td class=&quot;tg-aa5g&quot;&gt;Новосибирск&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-cpgk&quot;&gt;Барнаул&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-aa5g&quot;&gt;Томск&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-vpy5&quot;&gt;Таиланд&lt;/td&gt;
+    &lt;td class=&quot;tg-cpgk&quot;&gt;Ко Пха Нган &lt;br&gt;Ко Самуи&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-kjfg&quot;&gt;+8&lt;/td&gt;
+    &lt;td class=&quot;tg-me4s&quot;&gt;Индонезія&lt;br&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-aa5g&quot;&gt;Денпасар&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-8sel&quot;&gt;+9&lt;/td&gt;
+    &lt;td class=&quot;tg-vpy5&quot; rowspan=&quot;4&quot;&gt;Россія&lt;/td&gt;
+    &lt;td class=&quot;tg-cpgk&quot;&gt;Мирный&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-kjfg&quot; rowspan=&quot;2&quot;&gt;+10&lt;/td&gt;
+    &lt;td class=&quot;tg-aa5g&quot;&gt;Хабаровск&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-cpgk&quot;&gt;Владивосток&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-me4s&quot;&gt;+12&lt;/td&gt;
+    &lt;td class=&quot;tg-aa5g&quot;&gt;Петропавловск-Камчатскій&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-0yto&quot; colspan=&quot;3&quot;&gt;भस्मीभवति राजेन्द्र अपि जन्मशतोद्भवम् ॥&lt;/td&gt;
+    &lt;td class=&quot;tg-dc51&quot;&gt;5 марта&lt;/td&gt;
+    &lt;td class=&quot;tg-dc51&quot;&gt;6 марта&lt;/td&gt;
+    &lt;td class=&quot;tg-dc51&quot;&gt;7 марта&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-dc51&quot;&gt;9 марта&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-me4s&quot; rowspan=&quot;5&quot;&gt;+4&lt;/td&gt;
+    &lt;td class=&quot;tg-me4s&quot;&gt;Арменія&lt;/td&gt;
+    &lt;td class=&quot;tg-aa5g&quot;&gt;Ереван&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-lign&quot; rowspan=&quot;24&quot;&gt;Āмалакӣ экāдащӣ&lt;/td&gt;
+    &lt;td class=&quot;tg-cb1q&quot;&gt;&amp;lt;7:59&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-ugyf&quot; rowspan=&quot;24&quot;&gt;Холикā пәурн̣амāсӣ, Кāма-даханам&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-cpgk&quot;&gt;Грузія&lt;/td&gt;
+    &lt;td class=&quot;tg-cpgk&quot;&gt;Тбилиси&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-82cu&quot;&gt;&amp;lt;7:59&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-me4s&quot; rowspan=&quot;8&quot;&gt;Россія&lt;/td&gt;
+    &lt;td class=&quot;tg-aa5g&quot;&gt;Самара&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-cb1q&quot;&gt;&amp;lt;7:59&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-ket8&quot;&gt;Волгоград&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-82cu&quot;&gt;&amp;lt;7:59&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-aa5g&quot;&gt;Ульяновск&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-cb1q&quot;&gt;&amp;lt;7:59&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-vpy5&quot; rowspan=&quot;19&quot;&gt;+3&lt;/td&gt;
+    &lt;td class=&quot;tg-cpgk&quot;&gt;Пятигорск&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-82cu&quot;&gt;&amp;lt;6:59&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-aa5g&quot;&gt;Ставрополь&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-cb1q&quot;&gt;&amp;lt;6:59&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-cpgk&quot;&gt;Семикаракорск&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-82cu&quot;&gt;&amp;lt;6:59&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-aa5g&quot;&gt;Краснодар&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-cb1q&quot;&gt;&amp;lt;6:59&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-cpgk&quot;&gt;Симферополь&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-kjfg&quot;&gt;ДНР&lt;/td&gt;
+    &lt;td class=&quot;tg-aa5g&quot;&gt;Донецк&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-8sel&quot; rowspan=&quot;11&quot;&gt;Россія&lt;/td&gt;
+    &lt;td class=&quot;tg-cpgk&quot;&gt;Старый Оскол&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-aa5g&quot;&gt;Воронеж&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-ket8&quot;&gt;Тамбов&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-82cu&quot;&gt;&amp;lt;6:59&lt;br&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-aa5g&quot;&gt;Казань&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-cb1q&quot;&gt;&amp;lt;6:59&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-cpgk&quot;&gt;Киров&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-82cu&quot;&gt;&amp;lt;6:59&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-aa5g&quot;&gt;Рязань&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-cpgk&quot;&gt;Москва&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-aa5g&quot;&gt;Санкт-Петербург&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-cpgk&quot;&gt;Мурманск&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-lddw&quot;&gt;Костомукша&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-cpgk&quot;&gt;Смоленск&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-kjfg&quot; rowspan=&quot;2&quot;&gt;Бѣлоруссія&lt;/td&gt;
+    &lt;td class=&quot;tg-aa5g&quot;&gt;Гомель&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-cpgk&quot;&gt;Минск&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-gi98&quot; colspan=&quot;3&quot;&gt;न काशी न गया गङ्गा ... तुल्यं भूप हरेर्दिनात् ॥&lt;/td&gt;
+    &lt;td class=&quot;tg-i9cg&quot;&gt;5 марта&lt;/td&gt;
+    &lt;td class=&quot;tg-i9cg&quot;&gt;6 марта&lt;/td&gt;
+    &lt;td class=&quot;tg-i9cg&quot;&gt;7 марта&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-i9cg&quot;&gt;9 марта&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-8sel&quot; rowspan=&quot;12&quot;&gt;+2 DST&lt;/td&gt;
+    &lt;td class=&quot;tg-vpy5&quot; rowspan=&quot;7&quot;&gt;Украина&lt;/td&gt;
+    &lt;td class=&quot;tg-cpgk&quot;&gt;Харьков&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-wtwu&quot; rowspan=&quot;17&quot;&gt;Āмалакӣ экāдащӣ&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-ehq4&quot; rowspan=&quot;21&quot;&gt;Холикā пәурн̣амāсӣ, Кāма-даханам&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-aa5g&quot;&gt;Кременчуг&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-cpgk&quot;&gt;Кривой Рог&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-aa5g&quot;&gt;Киев&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-cpgk&quot;&gt;Николаев&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-aa5g&quot;&gt;Одесса&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-cpgk&quot;&gt;Коломыя&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-me4s&quot;&gt;Молдова&lt;/td&gt;
+    &lt;td class=&quot;tg-aa5g&quot;&gt;Кишинев&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-vpy5&quot; rowspan=&quot;2&quot;&gt;Латвія&lt;/td&gt;
+    &lt;td class=&quot;tg-cpgk&quot;&gt;Рига&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-aa5g&quot;&gt;Юрмала&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-8sel&quot;&gt;Эстонія&lt;/td&gt;
+    &lt;td class=&quot;tg-cpgk&quot;&gt;Таллин&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-mz0k&quot;&gt;Литва&lt;/td&gt;
+    &lt;td class=&quot;tg-lddw&quot;&gt;Вильнюс&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-vpy5&quot; rowspan=&quot;4&quot;&gt;+1 DST&lt;/td&gt;
+    &lt;td class=&quot;tg-8sel&quot;&gt;Польша&lt;/td&gt;
+    &lt;td class=&quot;tg-cpgk&quot;&gt;Варшава&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-kjfg&quot;&gt;Австрія&lt;/td&gt;
+    &lt;td class=&quot;tg-aa5g&quot;&gt;Вѣна&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-8sel&quot;&gt;Франція&lt;/td&gt;
+    &lt;td class=&quot;tg-cpgk&quot;&gt;Марсель&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-mz0k&quot;&gt;Испанія&lt;/td&gt;
+    &lt;td class=&quot;tg-lddw&quot;&gt;Барселона&lt;br&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-8sel&quot;&gt;0 DST&lt;/td&gt;
+    &lt;td class=&quot;tg-8sel&quot;&gt;В.Британія&lt;/td&gt;
+    &lt;td class=&quot;tg-cpgk&quot;&gt;Лондон&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-kjfg&quot;&gt;-4 DST&lt;/td&gt;
+    &lt;td class=&quot;tg-kjfg&quot; rowspan=&quot;2&quot;&gt;Канада&lt;/td&gt;
+    &lt;td class=&quot;tg-aa5g&quot;&gt;Фредериктон&lt;/td&gt;
+    &lt;td class=&quot;tg-lign&quot; rowspan=&quot;4&quot;&gt;Āмалакӣ экāдащӣ&lt;/td&gt;
+    &lt;td class=&quot;tg-cb1q&quot;&gt;&amp;gt;7:42&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-8sel&quot; rowspan=&quot;2&quot;&gt;-5 DST&lt;/td&gt;
+    &lt;td class=&quot;tg-cpgk&quot;&gt;Торонто&lt;br&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-82cu&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-me4s&quot;&gt;Мексика&lt;/td&gt;
+    &lt;td class=&quot;tg-aa5g&quot;&gt;Канкун&lt;/td&gt;
+    &lt;td class=&quot;tg-v2ry&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-qjk1&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-vpy5&quot;&gt;-6&lt;/td&gt;
+    &lt;td class=&quot;tg-vpy5&quot;&gt;Канада&lt;/td&gt;
+    &lt;td class=&quot;tg-cpgk&quot;&gt;Meadow Lake&lt;/td&gt;
+    &lt;td class=&quot;tg-82cu&quot;&gt;*&lt;/td&gt;
+    &lt;td class=&quot;tg-hdoh&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-oe15&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-bzv1&quot; colspan=&quot;3&quot;&gt;॥ ॐ तत्सत् ॥&lt;/td&gt;
+    &lt;td class=&quot;tg-i9cg&quot;&gt;5 марта&lt;/td&gt;
+    &lt;td class=&quot;tg-i9cg&quot;&gt;6 марта&lt;/td&gt;
+    &lt;td class=&quot;tg-i9cg&quot;&gt;7 марта&lt;/td&gt;
+    &lt;td class=&quot;tg-kaak&quot;&gt;&lt;/td&gt;
+    &lt;td class=&quot;tg-i9cg&quot;&gt;9 марта&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;*&lt;/strong&gt; &mdash; Пāран̣іе (завершеніе поста принятіем воды и пищи) в обычное время: после восхода Сӯрйи в теченіе 1/5 свѣтлаго времени суток. Крайній срок такого пāран̣ія можно разсчитать &lt;a href=&quot;https://tatvavadi.ru/paara.nakaala/&quot; target=&quot;_blank&quot;&gt;здѣсь&lt;/a&gt; или в программѣ &lt;a href=&quot;https://www.patreon.com/vaishnavam_panchangam&quot; target=&quot;_blank&quot;&gt;&laquo;Вәишн̣авам̇ пањчāӈгам&raquo;&lt;/a&gt;.&lt;p&gt;
+&lt;p&gt; &lt;strong&gt;&amp;#60;&lt;/strong&gt; &mdash; Пāран̣іе &lt;em&gt;не позднѣе&lt;/em&gt; указаннаго времени (в 24-часовом форматѣ)&lt;/p&gt;
+&lt;p&gt; &lt;strong&gt;&amp;#62;&lt;/strong&gt; &mdash; Пāран̣іе &lt;em&gt;не раньше&lt;/em&gt; указаннаго времени (в 24-часовом форматѣ)&lt;/p&gt;
+&lt;br /&gt;
+
+## Холикā пәурн̣амāсӣ, Кāма-даханам
+
+Вечером этого полнолунія проводят **Кāма-даханам** &mdash; сжигают чучело Кāмадэвы в знак отказа от главенства плотских желаній. Утро слѣдующаго дня празднуют, опрыскивая и осыпая друг друга красками. Этот праздник называется **Холи-махотсав**.
+
+
+&lt;br /&gt;
+&lt;p&gt;Вопросы по постам и вратам, уточненія и предложенія, а также свѣденія об измѣненіи часового пояса в Вашей мѣстности и просьбы о включеніи новых мѣст в расчеты направляйте, пожалуйста, на адрес-молнію &lt;a href=&quot;mailto:ekaadashii@gmail.com&quot;&gt;ekaadashii@gmail.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Экāдащӣ-вратāни разсчитаны с помощью программы &lt;a href=&quot;https://www.patreon.com/vaishnavam_panchangam&quot; target=&quot;_blank&quot;&gt;&laquo;Вәишн̣авам̇ пањчāӈгам&raquo;&lt;/a&gt;, созданной Āщутошей.
+&lt;br /&gt;
+&lt;p&gt;с уваженіем&lt;br /&gt;&lt;a href=&quot;mailto:ekaadashii@gmail.com&quot;&gt;Нāрасим̇ха&lt;/a&gt;&lt;/p&gt;</textarea>
+<div id="convert"></div>
+</td>
+</table>
+<script>
+var get_pairs = function() {
+    var pairs_text = document.getElementById("pairs").value.split("\n");
+    //var regexp = /^(.*?)\s*&lt;=&gt;\s*(.*)$/;
+    var regexp=/^\s*(.*?)\s*<=>\s*(.*?)\s*$/;
+    var local_pairs = Array();
+    pairs_text.forEach(function(pair) {
+        var res=regexp.exec(pair);
+        if (res) {
+            //console.log(res[1], res[2]);
+            local_pairs.push([res[1], res[2]]);
+        }
+    });
+    return local_pairs;
+};
+document.getElementById("convert").innerHTML = '<input type="button" value="Convert" id="convert-button"></input>';
+document.getElementById("convert-button").onclick = function() {
+    var pairs = get_pairs();
+    
+    var text=document.getElementById("text").value;
+    pairs.forEach(function(pair) {
+        text = text.replace(new RegExp(pair[0], 'g'), pair[1]);
+    });
+    document.getElementById("text").value = text;
+};
+</script>
+</body>
+</html>
