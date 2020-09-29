@@ -2,6 +2,11 @@
 <html>
 <head>
 <meta charset="utf-8">
+<style>
+#convertengrus-button {
+margin-left: 2em;
+}
+</style>
 </head>
 <body>
 <table>
@@ -171,6 +176,18 @@ Replacement pairs:<br>
 (\d+((–|-)\d+)?)\s+октября &lt;=&gt; October $1
 (\d+((–|-)\d+)?)\s+ноября &lt;=&gt; November $1
 (\d+((–|-)\d+)?)\s+декабря &lt;=&gt; December $1
+$1 января &lt;=&gt; January\s+(\d+((–|-)\d+)?)
+$1 февраля &lt;=&gt; February\s+(\d+((–|-)\d+)?)
+$1 марта &lt;=&gt; March\s+(\d+((–|-)\d+)?)
+$1 апреля &lt;=&gt; April\s+(\d+((–|-)\d+)?)
+$1 мая &lt;=&gt; May\s+(\d+((–|-)\d+)?)
+$1 іюня &lt;=&gt; June\s+(\d+((–|-)\d+)?)
+$1 іюля &lt;=&gt; July\s+(\d+((–|-)\d+)?)
+$1 августа &lt;=&gt; August\s+(\d+((–|-)\d+)?)
+$1 сентября &lt;=&gt; September\s+(\d+((–|-)\d+)?)
+$1 октября &lt;=&gt; October\s+(\d+((–|-)\d+)?)
+$1 ноября &lt;=&gt; November\s+(\d+((–|-)\d+)?)
+$1 декабря &lt;=&gt; December\s+(\d+((–|-)\d+)?)
 </textarea>
 </td>
 <td>
@@ -767,7 +784,6 @@ description: &quot;Āмалакӣ экāдащӣ, Холикā пәурн̣ам�
 <script>
 var get_pairs = function() {
     var pairs_text = document.getElementById("pairs").value.split("\n");
-    //var regexp = /^(.*?)\s*&lt;=&gt;\s*(.*)$/;
     var regexp=/^\s*(.*?)\s*<=>\s*(.*?)\s*$/;
     var local_pairs = Array();
     pairs_text.forEach(function(pair) {
@@ -779,14 +795,29 @@ var get_pairs = function() {
     });
     return local_pairs;
 };
-document.getElementById("convert").innerHTML = '<input type="button" value="Convert" id="convert-button"></input>';
+
+var replace_pairs_in_html_text = function(pairs, text) {
+    var [pre_style, style, post_style] = text.split(/(<style(?:.|\n)*\/style>)/g);
+    pairs.forEach(function(pair) {
+        pre_style =  pre_style.replace(new RegExp(pair[0], 'g'), pair[1]);
+        post_style =  post_style.replace(new RegExp(pair[0], 'g'), pair[1]);
+    });
+    return pre_style + style + post_style;
+};
+
+document.getElementById("convert").innerHTML = '<input type="button" value="rus =&gt;&gt; eng" id="convert-button"></input> <input type="button" value="eng =&gt;&gt; rus" id="convertengrus-button"></input>';
 document.getElementById("convert-button").onclick = function() {
     var pairs = get_pairs();
-    
     var text=document.getElementById("text").value;
-    pairs.forEach(function(pair) {
-        text = text.replace(new RegExp(pair[0], 'g'), pair[1]);
+    document.getElementById("text").value = replace_pairs_in_html_text(pairs, text);
+};
+document.getElementById("convertengrus-button").onclick = function() {
+   var pairs = get_pairs();
+   pairs.forEach(function(pair) {
+       var temp=pair[0]; pair[0] = pair[1]; pair[1] = temp;
     });
+    var text=document.getElementById("text").value;
+    text = replace_pairs_in_html_text(pairs, text);
     document.getElementById("text").value = text;
 };
 </script>
